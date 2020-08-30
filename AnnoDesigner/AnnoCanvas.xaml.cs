@@ -2239,8 +2239,8 @@ namespace AnnoDesigner
         /// <param name="border"></param>
         public void Normalize(int border)
         {
-            _viewport.Left = 0;
-            _viewport.Top = 0;
+            _viewport.Left = border;
+            _viewport.Top = border;
 
             if (PlacedObjects.Count() == 0)
             {
@@ -2254,7 +2254,7 @@ namespace AnnoDesigner
                 item.Position = new Point(item.Position.X - dx, item.Position.Y - dy);
             }
 
-            PlacedObjects.ReIndex();
+            PlacedObjects.ReIndex(_ => _.GridRect);
             InvalidateVisual();
             InvalidateBounds();
             InvalidateScroll();
