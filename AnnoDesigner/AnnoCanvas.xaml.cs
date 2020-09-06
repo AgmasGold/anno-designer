@@ -477,7 +477,9 @@ namespace AnnoDesigner
         /// <summary>
         /// The typeface used when rendering text on the canvas.
         /// </summary>
-        private readonly Typeface TYPEFACE = new Typeface("Verdana");
+        private static readonly Typeface TYPEFACE = new Typeface("Verdana");
+
+        private readonly UndoRedoService _undoRedoService = new UndoRedoService();
 
         #endregion
 
@@ -2071,6 +2073,21 @@ namespace AnnoDesigner
                 e.Handled = true;
             }
 #endif
+            if (e.Key == Key.Z && Keyboard.Modifiers == (ModifierKeys.Control))
+            {
+                logger.Debug(_undoRedoService.CurrentState);
+                PlacedObjects = new QuadTree<LayoutObject>(PlacedObjects.Extent);
+                PlacedObjects.AddRange(_undoRedoService.Undo().Select(_ => (_, _.GridRect)));
+                e.Handled = true;
+            }
+
+            if (e.Key == Key.Y && Keyboard.Modifiers == (ModifierKeys.Control))
+            {
+                PlacedObjects = new QuadTree<LayoutObject>(PlacedObjects.Extent);
+                PlacedObjects.AddRange(_undoRedoService.Redo().Select(_ => (_, _.GridRect)));
+                e.Handled = true;
+            }
+
             if (e.Handled)
             {
                 InvalidateVisual();
@@ -2165,8 +2182,8 @@ namespace AnnoDesigner
                     {
                         InvalidateScroll();
                     }
+                    _undoRedoService.UpdateState(PlacedObjects.All().ToList());
                     return true;
-
                 }
                 return false;
             }

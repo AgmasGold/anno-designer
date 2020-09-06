@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <FrameworkSDKRoot />
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <MSBuildToolsPath32>C:\Windows\Microsoft.NET\Framework\v4.0.30319\</MSBuildToolsPath32>
+    <MSBuildToolsRoot>C:\Windows\Microsoft.NET\Framework64\</MSBuildToolsRoot>
+    <SDK35ToolsPath />
+    <SDK40ToolsPath />
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+    <WindowsSDK80Path />
+    <Configuration>Debug</Configuration>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Debug</AspNetConfiguration>
+    <SolutionDir>C:\Users\Agmas\source\repos\anno-designer\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>AnnoDesigner.sln</SolutionFileName>
+    <SolutionName>AnnoDesigner</SolutionName>
+    <SolutionPath>C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{3AF4C58B-FEF0-485F-8DBF-CC61F9AF6FAD}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F6EA37DC-F9E0-445D-B727-F742E6E61D91}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C73FBFF0-1A11-40FC-8F1F-29637699419A}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{82097B68-D1A8-4091-A5AE-D4F65138D933}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D49B557D-320C-425E-8822-051AC5A1A26F}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{809FDE16-4864-4CD2-83A5-75315E970BFD}" AbsolutePath="C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=11.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="AnnoDesigner" Outputs="@(AnnoDesignerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="AnnoDesignerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="AnnoDesigner:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="AnnoDesigner:Rebuild" Outputs="@(AnnoDesignerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="AnnoDesignerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="AnnoDesigner:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner\AnnoDesigner.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="PresetParser" Outputs="@(PresetParserBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PresetParserBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="PresetParser:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="PresetParser:Rebuild" Outputs="@(PresetParserBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PresetParserBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="PresetParser:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\PresetParser\PresetParser.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="AnnoDesigner_Core" Outputs="@(AnnoDesigner_CoreBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="AnnoDesigner_CoreBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="AnnoDesigner_Core:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="AnnoDesigner_Core:Rebuild" Outputs="@(AnnoDesigner_CoreBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="AnnoDesigner_CoreBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="AnnoDesigner_Core:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\AnnoDesigner.Core\AnnoDesigner.Core.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Core_Tests" Outputs="@(Tests_AnnoDesigner_Core_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_AnnoDesigner_Core_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Core_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Core_Tests:Rebuild" Outputs="@(Tests_AnnoDesigner_Core_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_AnnoDesigner_Core_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Core_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Core.Tests\AnnoDesigner.Core.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\PresetParser_Tests" Outputs="@(Tests_PresetParser_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_PresetParser_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\PresetParser_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\PresetParser_Tests:Rebuild" Outputs="@(Tests_PresetParser_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_PresetParser_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\PresetParser_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\PresetParser.Tests\PresetParser.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Tests" Outputs="@(Tests_AnnoDesigner_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_AnnoDesigner_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Tests:Rebuild" Outputs="@(Tests_AnnoDesigner_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Tests_AnnoDesigner_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Tests\AnnoDesigner_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Agmas\source\repos\anno-designer\Tests\AnnoDesigner.Tests\AnnoDesigner.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>
